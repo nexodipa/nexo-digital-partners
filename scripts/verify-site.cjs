@@ -50,9 +50,9 @@ async function main() {
       await Promise.all(images.slice(0,2).map(img => img.decode()));
     });
     await page.screenshot({ path: path.join(output,'projects.png') });
-    assert.equal(await page.locator('.portfolio-card:visible').count(), 5);
+    assert.equal(await page.locator('.portfolio-card:visible').count(), 8);
     await page.locator('[data-filter="ops"]').click();
-    assert.equal(await page.locator('.portfolio-card:visible').count(), 1);
+    assert.equal(await page.locator('.portfolio-card:visible').count(), 4);
     assert.equal(await page.locator('[data-filter="ops"]').getAttribute('aria-pressed'), 'true');
     await page.locator('[data-preview="medstock"]').click();
     assert.equal(await page.locator('#project-dialog').isVisible(), true);

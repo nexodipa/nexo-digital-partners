@@ -76,3 +76,14 @@ dialog { padding:16px; }.dialog-heading h2 { font-size:21px; }html[dir='rtl'] .h
 .project-footer { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:20px; padding-top:14px; border-top:1px solid var(--line); }
 .project-footer > span { font-size:11px; color:var(--muted); }
 .project-footer .text-link { margin-top:0; }
+/* Keep names and contact details readable inside right-to-left layouts. */
+.brand strong,.hero h1,[translate="no"],.direct-contact a { unicode-bidi:isolate; }
+.brand strong,.hero h1,.language-switcher select,.direct-contact a { direction:ltr; }
+html[dir='rtl'] .hero h1 { text-align:right; }
+.language-switcher { flex-shrink:0; }
+.language-switcher select { min-height:44px; }
+.site-nav a,.primary-button,.text-link { overflow-wrap:anywhere; }
+.hero-actions > a { max-width:100%; }
+.solution>div { padding-inline-start:37px; padding-inline-end:0; }
+.terms-grid p { padding-inline-start:0; padding-inline-end:24px; }
+@media(max-width:600px) { .language-switcher select { width:132px; font-size:12px; } }

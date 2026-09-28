@@ -26,7 +26,7 @@ function translateAttribute(element, attr, lang) {
   if (!(attr in originals)) originals[attr] = element.getAttribute(attr);
   element.setAttribute(attr, translateText(originals[attr], lang));
 }
-function applyLanguage(requested) {
+function applyLanguage(requested, updateUrl = false) {
   const lang = supportedLanguages.includes(requested) ? requested : "es";
   languageSelect.value = lang;
   document.documentElement.lang = lang;
@@ -42,13 +42,20 @@ function applyLanguage(requested) {
   while (walker.nextNode()) nodes.push(walker.currentNode);
   nodes.forEach(node => {
     if (!originalText.has(node)) originalText.set(node, node.textContent);
-    node.textContent = translateText(originalText.get(node), lang);
+    const source = originalText.get(node);
+    const translated = translateText(source, lang);
+    node.textContent = translated === source ? source : source.match(/^\s*/)[0] + translated + source.match(/\s*$/)[0];
   });
   document.querySelectorAll("[placeholder], [aria-label], [title], [alt]").forEach(element => {
     if (element.closest('[translate="no"]')) return;
     ["placeholder", "aria-label", "title", "alt"].forEach(attr => translateAttribute(element, attr, lang));
   });
   document.title = "Nexo Digital Partners | " + translateText("Soluciones", lang);
+  if (updateUrl) {
+    const url = new URL(location.href);
+    url.searchParams.set("lang", lang);
+    history.replaceState(null, "", url);
+  }
   try { localStorage.setItem("nexo-language", lang); } catch { /* Storage can be unavailable in private or file contexts. */ }
   if (!result.hidden) prepareRequest();
 }
@@ -145,7 +152,17 @@ document.querySelector("#copy-request").addEventListener("click", async () => {
   }
 });
 window.lucide?.createIcons();
-let savedLanguage = "es";
-try { savedLanguage = localStorage.getItem("nexo-language") || "es"; } catch { /* The site remains usable without persistent storage. */ }
-applyLanguage(savedLanguage);
-languageSelect.addEventListener("change", () => applyLanguage(languageSelect.value));
+function resolveLanguage() {
+  const requested = new URL(location.href).searchParams.get("lang");
+  if (supportedLanguages.includes(requested)) return requested;
+  try {
+    const saved = localStorage.getItem("nexo-language");
+    if (supportedLanguages.includes(saved)) return saved;
+  } catch { /* Browser preferences still work without storage. */ }
+  return (navigator.languages || [navigator.language])
+    .map(locale => locale.toLowerCase().split("-")[0])
+    .find(locale => supportedLanguages.includes(locale)) || "en";
+}
+applyLanguage(resolveLanguage());
+languageSelect.addEventListener("change", () => applyLanguage(languageSelect.value, true));
+window.addEventListener("popstate", () => applyLanguage(resolveLanguage()));
