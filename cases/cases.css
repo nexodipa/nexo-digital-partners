@@ -1,0 +1,33 @@
+.case-header,.case-intro,.case-study,.case-footer { max-width:1100px; margin:auto; padding:32px; }
+.case-header { display:flex; justify-content:space-between; align-items:center; gap:24px; border-bottom:1px solid var(--line); }
+.case-header>div { display:flex; align-items:center; gap:24px; }
+.case-header select { max-width:155px; padding:8px; border:1px solid var(--line); background:white; }
+.case-intro { padding-top:72px; padding-bottom:48px; }
+.case-intro h1 { font-size:44px; max-width:790px; margin:20px 0; }
+.case-intro>p { max-width:750px; }
+.case-intro nav { display:flex; flex-wrap:wrap; gap:20px 36px; margin-top:30px; color:var(--teal); }
+.case-study { padding-top:50px; padding-bottom:64px; border-top:1px solid var(--ink); scroll-margin-top:24px; }
+.case-study h2 { margin:16px 0; font-size:34px; }
+.case-deck { font-size:20px; max-width:760px; }
+.case-study figure { margin:32px 0; background:var(--paper); }
+.case-study figure img { width:100%; height:auto; object-fit:contain; }
+.case-study figcaption { font-size:13px; padding:12px 16px; color:var(--muted); }
+.case-details { display:grid; grid-template-columns:1fr 1fr; gap:32px 48px; }
+.case-details h3,.case-limit h3 { font-size:20px; margin-bottom:12px; }
+.case-details ol { padding-left:20px; color:var(--muted); margin:0; }
+.case-details li { margin-bottom:8px; }
+.case-limit { border-left:3px solid var(--accent); padding:8px 0 8px 24px; margin:36px 0; }
+.case-actions { display:flex; flex-wrap:wrap; align-items:center; gap:24px; }
+.case-footer { border-top:1px solid var(--line); font-size:14px; }
+.case-footer a { display:inline-block; margin-top:12px; color:var(--teal); }
+@media(max-width:600px) {
+  .case-header,.case-intro,.case-study,.case-footer { padding:24px 20px; }
+  .case-header { flex-wrap:wrap; gap:16px; }
+  .case-header>div { width:100%; justify-content:space-between; }
+  .case-intro { padding-top:40px; }
+  .case-intro h1 { font-size:32px; }
+  .case-study h2 { font-size:28px; }
+  .case-details { grid-template-columns:1fr; gap:28px; }
+  .case-deck { font-size:18px; }
+  .case-actions a { max-width:100%; white-space:normal; }
+}
