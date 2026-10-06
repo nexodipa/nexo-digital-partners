@@ -19,7 +19,7 @@ No necesita cuenta ni suscripcion. No traduce tus respuestas ni genera contenido
 ## Archivos
 
 - Entrega: `products/nexo-brief-v1.zip`.
-- Demostracion publica: https://josuest-b.github.io/nexo-digital-partners/products/brief-kit/
+- Demostracion publica: https://nexodipa.github.io/nexo-digital-partners/products/brief-kit/
 - Formatos incluidos: HTML, CSS, JavaScript, PNG, JSON y Markdown.
 - Idiomas de la interfaz: espanol e ingles.
 

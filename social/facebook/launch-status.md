@@ -11,7 +11,7 @@ Pagina: https://www.facebook.com/profile.php?id=61591254974802
 - Bio: Webs, herramientas digitales y automatizacion para profesionales, negocios, salud y educacion. La version publicada conserva las tildes.
 - Categorias: Disenador web (principal) y Empresa de software. La interfaz confirmo ambas despues del guardado.
 - Sitio, telefono y correo existentes comprobados y preservados.
-- Boton principal Contactarnos guardado con destino `https://josuest-b.github.io/nexo-digital-partners/#contacto`. Se volvio a abrir la configuracion y el enlace permanecia guardado; no se agrego un formulario nativo de Facebook.
+- Boton principal Contactarnos guardado con destino `https://nexodipa.github.io/nexo-digital-partners/#contacto`. Se volvio a abrir la configuracion y el enlace permanecia guardado; no se agrego un formulario nativo de Facebook.
 - No se cambiaron las paginas Inner Oraculum, Criptorium ni Volia.
 
 ## Primera publicacion
@@ -33,7 +33,7 @@ Empezamos por una necesidad concreta: presentar tus servicios, recibir consultas
 En nuestro portafolio puedes explorar proyectos propios y prototipos en salud, educacion, servicios e inventario.
 
 Conoce el trabajo y cuentanos que necesitas resolver:
-https://josuest-b.github.io/nexo-digital-partners/
+https://nexodipa.github.io/nexo-digital-partners/
 
 #NexoDigitalPartners #DesarrolloWeb #Automatizacion
 
@@ -41,7 +41,7 @@ https://josuest-b.github.io/nexo-digital-partners/
 
 - Se cambio temporalmente al perfil personal del titular. La pagina mostro Contactarnos, Seguir y Mensaje; el titular conserva permisos administrativos, por lo que no fue una prueba anonima ni desde una cuenta independiente.
 - Contactarnos exponia una redireccion de Facebook hacia la web de Nexo con `#contacto`. El clic no produjo una pestaña nueva controlable; se abrio el enlace exacto observado en una pestaña de comprobacion y la redireccion resolvio correctamente.
-- Destino canonico: `https://josuest-b.github.io/nexo-digital-partners/#contacto`. El ancla quedo a unos 110 px del borde superior. El formulario `quote-form` mostraba Nombre, Contacto, Tipo de solucion, Contexto del proyecto, Presupuesto aproximado y Preparar solicitud.
+- Destino canonico: `https://nexodipa.github.io/nexo-digital-partners/#contacto`. El ancla quedo a unos 110 px del borde superior. El formulario `quote-form` mostraba Nombre, Contacto, Tipo de solucion, Contexto del proyecto, Presupuesto aproximado y Preparar solicitud.
 - No se rellenaron ni enviaron solicitudes. Se restauro la identidad de Nexo Digital Partners y se verificaron los controles de administracion y el compositor de la pagina.
 - No se guardan parametros de seguimiento de Facebook en esta evidencia.
 

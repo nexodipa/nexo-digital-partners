@@ -10,7 +10,7 @@
 
 Diseñamos y desarrollamos webs profesionales, landing pages, formularios, dashboards y microaplicaciones para profesionales y pequeños negocios. Trabajamos a distancia y definimos alcance, entregables y presupuesto antes de comenzar. Nuestro portafolio incluye proyectos propios y prototipos, identificados como tales. También preparamos experiencias multilingües y flujos de trabajo asistidos por IA según las necesidades de cada proyecto.
 
-- Dos muestras enlazadas añadidas a Contenido multimedia y verificadas tras recargar la ficha: Nexo | Web profesional multilingüe propia (https://josuest-b.github.io/nexo-digital-partners/) y Nexo Brief | Herramienta propia ES / EN (https://josuest-b.github.io/nexo-digital-partners/products/brief-kit/). No se usaron fotos personales ni se crearon publicaciones adicionales en el feed.
+- Dos muestras enlazadas añadidas a Contenido multimedia y verificadas tras recargar la ficha: Nexo | Web profesional multilingüe propia (https://nexodipa.github.io/nexo-digital-partners/) y Nexo Brief | Herramienta propia ES / EN (https://nexodipa.github.io/nexo-digital-partners/products/brief-kit/). No se usaron fotos personales ni se crearon publicaciones adicionales en el feed.
 - La primera muestra identifica el sitio como proyecto propio, responsive y con 12 idiomas, sin atribuir resultados comerciales. La segunda describe objetivos y alcance, guardado local, exportaciones JSON/Markdown, privacidad y limites: sin consultoria ni generacion automatica con IA. LinkedIn confirmo Contenido multimedia añadido para la primera y ambas persistieron en la ficha despues de Guardar/Hecho y recarga.
 
 ## Perfil de empresa
@@ -52,7 +52,7 @@ No todos los proyectos necesitan un sistema grande. Empezamos por el problema co
 En el portafolio compartimos proyectos propios y prototipos en salud, educacion, servicios e inventario.
 
 Mira ejemplos y cuentanos que necesitas resolver:
-https://josuest-b.github.io/nexo-digital-partners/
+https://nexodipa.github.io/nexo-digital-partners/
 
 #DesarrolloWeb #Automatizacion #NexoDigitalPartners
 

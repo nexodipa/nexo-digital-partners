@@ -21,7 +21,7 @@ The temporary localhost server was stopped after testing. CSS and the translatio
 
 GitHub Pages deployment job `35014506675` completed successfully, including the localization and offer-copy gates. The public page was reloaded and showed the new Spanish copy and both correct HTTPS destinations. An additional public check at 320 pixels in Arabic confirmed RTL and no horizontal overflow. The page was restored to Spanish and the viewport override was removed.
 
-Public page: https://josuest-b.github.io/nexo-digital-partners/#contacto
+Public page: https://nexodipa.github.io/nexo-digital-partners/#contacto
 
 ## Remaining limits
 

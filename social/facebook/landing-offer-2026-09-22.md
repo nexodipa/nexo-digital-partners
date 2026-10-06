@@ -15,7 +15,7 @@ En Nexo Digital Partners ofrecemos Landing Express desde USD 150: una página ad
 Antes de cotizar acordamos secciones, idioma, contenido, revisiones y calendario. Dominio, hosting, tienda, pagos, reservas automáticas e integraciones no están incluidos por defecto. El precio final depende del alcance; no prometemos un número de ventas.
 
 Explora nuestros proyectos propios y cuéntanos qué servicio necesitas presentar:
-https://josuest-b.github.io/nexo-digital-partners/#contacto
+https://nexodipa.github.io/nexo-digital-partners/#contacto
 
 #NexoDigitalPartners #DesarrolloWeb #LandingPage
 

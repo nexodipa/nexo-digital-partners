@@ -1,6 +1,6 @@
 # Nexo Catalog - verificacion 2026-09-13
 
-Ruta publica: https://josuest-b.github.io/nexo-digital-partners/products/catalog-check/
+Ruta publica: https://nexodipa.github.io/nexo-digital-partners/products/catalog-check/
 
 Demostracion funcional, no integracion ERP ni servicio de IA. CSV local con asignacion de columnas, validacion, grupos duplicados completos, detalle y exportaciones. No requiere cuenta, no envia datos, no modifica archivos originales.
 

@@ -11,8 +11,8 @@ async function main() {
       ['medstock', '../insumos-medicos-inventario/index.html'],
       ['volia', '../volia-sitio-web/index.html'],
       ['inner-oraculum', '../inner-oraculum-sitio-web/index.html'],
-      ['scriptorium', 'https://josuest-b.github.io/scriptorium-language-studio/'],
-      ['psyche-lab', 'https://josuest-b.github.io/psyche-lab-sitio-web/']
+      ['scriptorium', 'https://nexodipa.github.io/scriptorium-language-studio/'],
+      ['psyche-lab', 'https://nexodipa.github.io/psyche-lab-sitio-web/']
     ]) {
       const page = await context.newPage();
       const url = location.startsWith('https:') ? location : pathToFileURL(path.resolve(root, location)).href;

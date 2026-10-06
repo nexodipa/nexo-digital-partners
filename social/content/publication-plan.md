@@ -32,7 +32,7 @@ En Nexo Digital Partners diseñamos activos digitales que combinan estrategia, e
 
 Trabajamos especialmente con profesionales, proyectos de salud, educacion, marcas de servicios y negocios que necesitan convertir una idea en un sistema claro y util.
 
-Conoce el portafolio: https://josuest-b.github.io/nexo-digital-partners/
+Conoce el portafolio: https://nexodipa.github.io/nexo-digital-partners/
 
 #SistemasDigitales #Automatizacion #InteligenciaArtificial #DesarrolloWeb #NexoDigitalPartners
 

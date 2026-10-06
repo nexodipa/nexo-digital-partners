@@ -16,7 +16,7 @@ El titular retomo y autorizo crear/subir imagenes. Se crearon dos piezas promoci
 
 ## Publico y comprobado
 
-- GitHub, 2026-09-16: README renovado con captura real, herramientas operativas, servicios delimitados, demos, contacto y comandos de comprobacion. Renderizado publico e imagen 1440 x 960 verificados. El despliegue ejecuta ahora las pruebas de Nexo Brief y Nexo Catalog, ocho casos del verificador de paquetes y comparacion exacta de los nueve archivos del ZIP con su fuente. Paso y despliegue aprobados en https://github.com/JosueST-B/nexo-digital-partners/actions/runs/35096775824 (codigo `0d4588f`). Saltos LF fijados para los textos del producto en Windows/Linux. No se modifico el ZIP de Gumroad ni se verifico una compra con estas pruebas.
+- GitHub, 2026-09-16: README renovado con captura real, herramientas operativas, servicios delimitados, demos, contacto y comandos de comprobacion. Renderizado publico e imagen 1440 x 960 verificados. El despliegue ejecuta ahora las pruebas de Nexo Brief y Nexo Catalog, ocho casos del verificador de paquetes y comparacion exacta de los nueve archivos del ZIP con su fuente. Paso y despliegue aprobados en https://github.com/nexodipa/nexo-digital-partners/actions/runs/35096775824 (codigo `0d4588f`). Saltos LF fijados para los textos del producto en Windows/Linux. No se modifico el ZIP de Gumroad ni se verifico una compra con estas pruebas.
 
 - Facebook, 2026-09-16: Nexo Brief anunciado gratis con aportacion opcional, desde Nexo y con audiencia publica. Texto, autor, etiqueta de IA y enlace a Gumroad verificados en el permalink. Sin fotos nuevas, anuncios pagados ni mensajes. Evidencia en `social/facebook/brief-post-2026-09-16.md`.
 
@@ -24,7 +24,7 @@ El titular retomo y autorizo crear/subir imagenes. Se crearon dos piezas promoci
 
 - LinkedIn, 2026-09-15: Nexo Brief anunciado como descarga gratuita con aportacion opcional. Publicacion global y vista previa de Gumroad verificadas: https://www.linkedin.com/feed/update/urn:li:share:7505708559339384833/ . Texto y limites en `social/linkedin/brief-post-2026-09-15.md`. Sin nuevas fotos ni anuncios pagados.
 
-- Sitio: https://josuest-b.github.io/nexo-digital-partners/ . Rediseño propio, monograma sin rostro, capturas reales, servicios y contacto. Interfaz en doce idiomas; pruebas funcionales y responsive documentadas. Los cambios se publican en `main` y `gh-pages`.
+- Sitio: https://nexodipa.github.io/nexo-digital-partners/ . Rediseño propio, monograma sin rostro, capturas reales, servicios y contacto. Interfaz en doce idiomas; pruebas funcionales y responsive documentadas. Los cambios se publican en `main` y `gh-pages`.
 - LinkedIn: logo, portada, doce especialidades y descripciones ES/EN. Presentacion publicada: https://www.linkedin.com/feed/update/urn:li:share:7504194026607378432/ . Evidencia en `social/linkedin/launch-status.md`.
 - Facebook: portada, logo, bio y categorias guardados; presentacion fijada en Destacados. Boton Contactarnos configurado hacia el sitio. Segunda publicacion sobre Nexo Catalog visible con audiencia publica y enlace a la demo. Evidencia en `social/facebook/launch-status.md` y `social/facebook/catalog-post-2026-09-13.md`.
 - Workana: se conserva el perfil linguistico y se agrega la oferta tecnologica a Sobre mi. Proyecto propio de la web de Nexo publicado con captura real y HTML/CSS/JavaScript; comprobado despues de recargar. Detalle en `social/marketplaces/launch-status.md`.

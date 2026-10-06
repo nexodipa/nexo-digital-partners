@@ -19,6 +19,6 @@ El alcance base incluye una página adaptable a móvil y escritorio, estructura 
 Antes de cotizar acordamos secciones, idioma, contenido, revisiones y calendario. Dominio, hosting, tienda, pagos, reservas automáticas e integraciones no están incluidos por defecto. El precio final depende del alcance; no prometemos un número de ventas.
 
 Cuéntanos qué servicio quieres presentar y qué contenido tienes. Revisa muestras de proyectos propios y solicita una propuesta:
-https://josuest-b.github.io/nexo-digital-partners/#contacto
+https://nexodipa.github.io/nexo-digital-partners/#contacto
 
 #DesarrolloWeb #LandingPage #NexoDigitalPartners

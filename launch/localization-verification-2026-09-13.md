@@ -1,6 +1,6 @@
 # Localizacion del sitio comercial
 
-Fecha: 2026-09-13. Sitio verificado: https://josuest-b.github.io/nexo-digital-partners/
+Fecha: 2026-09-13. Sitio verificado: https://nexodipa.github.io/nexo-digital-partners/
 
 ## Correccion
 

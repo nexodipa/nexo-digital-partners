@@ -17,7 +17,7 @@ Categorias sugeridas:
 - Marketing agency
 - Software company
 
-Sitio web: https://josuest-b.github.io/nexo-digital-partners/
+Sitio web: https://nexodipa.github.io/nexo-digital-partners/
 
 Email: josuepug@gmail.com
 

@@ -48,7 +48,7 @@ Own projects, not client commissions. These cases describe design problems and w
 
 **English:** Our own service website organizes offers, project-based quotes, examples and contact. It supports twelve interface languages, including Arabic and Hebrew RTL. Try switching languages and preparing a fictional inquiry. Sending remains a separate visitor action; there is no connected CRM or automatic submission. The brand illustration is not an office photograph, and the website is not evidence of client sales.
 
-[Ver demo / Open demo](https://nexodipa.github.io/nexo-digital-partners/) · [Codigo / Source](https://github.com/JosueST-B/nexo-digital-partners)
+[Ver demo / Open demo](https://nexodipa.github.io/nexo-digital-partners/) · [Codigo / Source](https://github.com/nexodipa/nexo-digital-partners)
 
 ## 02. Nexo Brief
 

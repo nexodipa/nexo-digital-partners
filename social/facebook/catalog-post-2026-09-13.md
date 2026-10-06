@@ -17,7 +17,7 @@ Por eso construimos Nexo Catalog: una herramienta que revisa archivos CSV antes 
 Funciona localmente en el navegador: no envía el catálogo a nuestros servidores y no modifica el archivo original. Tiene interfaz en español e inglés y un ejemplo ficticio para probarla sin usar datos de tu negocio.
 
 Prueba la demo:
-https://josuest-b.github.io/nexo-digital-partners/products/catalog-check/
+https://nexodipa.github.io/nexo-digital-partners/products/catalog-check/
 
 Es un desarrollo propio de Nexo, no una integración automática con tu inventario. Si necesitas adaptar este flujo a los archivos de tu negocio, cuéntanos qué proceso quieres simplificar.
 
