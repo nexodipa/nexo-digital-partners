@@ -96,3 +96,11 @@ html[dir='rtl'] .hero h1 { text-align:right; }
 .founder-body p { font-size:15px; max-width:640px; }
 .founder-facts { margin:20px 0 22px; padding-inline-start:18px; color:var(--muted); font-size:14px; }.founder-facts li { margin:8px 0; }
 @media (max-width:640px) { .founder-card { grid-template-columns:1fr; gap:18px; } .founder-mark { width:64px; height:64px; } }
+
+.faq-section { border-top:1px solid var(--line); }
+.faq-list { max-width:860px; border-top:1px solid var(--ink); }
+.faq-item { border-bottom:1px solid var(--line); }
+.faq-item summary { display:flex; align-items:center; gap:17px; min-height:64px; padding:16px 0; cursor:pointer; }
+.faq-item summary h3 { flex:1; font-size:18px; line-height:1.4; }
+.faq-item .expand-icon { width:16px; flex:none; transition:transform .2s; }.faq-item[open] .expand-icon { transform:rotate(45deg); }
+.faq-item p { padding:0 0 24px; font-size:15px; max-width:720px; }
