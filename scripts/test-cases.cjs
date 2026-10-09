@@ -14,9 +14,9 @@ const assert = require('node:assert/strict');
       for (const lang of ['es', 'en']) {
         await page.goto(`${base}?lang=${lang}#catalog`);
         assert.equal(await page.locator('html').getAttribute('lang'), lang);
-        assert.equal(await page.locator('.case-study').count(), 2);
+        assert.equal(await page.locator('.case-study').count(), 4);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
-        await page.locator('#international').scrollIntoViewIfNeeded();
+        for (const image of await page.locator('.case-study img').all()) await image.scrollIntoViewIfNeeded();
         await page.waitForFunction(() => [...document.images].every(img => img.complete && img.naturalWidth > 0));
         await page.selectOption('#case-language', lang === 'es' ? 'en' : 'es');
         assert.equal(new URL(page.url()).hash, '#catalog');
@@ -26,15 +26,15 @@ const assert = require('node:assert/strict');
     }
     await page.setViewportSize({ width: 1440, height: 1000 });
     await page.goto(`${base}?lang=es`);
-    await page.locator('#international').scrollIntoViewIfNeeded();
+    for (const image of await page.locator('.case-study img').all()) await image.scrollIntoViewIfNeeded();
     await page.waitForFunction(() => [...document.images].every(img => img.complete && img.naturalWidth > 0));
     await page.screenshot({ path: 'verification/cases-desktop.png', fullPage: true });
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto(`${base}?lang=en`);
-    await page.locator('#international').scrollIntoViewIfNeeded();
+    for (const image of await page.locator('.case-study img').all()) await image.scrollIntoViewIfNeeded();
     await page.waitForFunction(() => [...document.images].every(img => img.complete && img.naturalWidth > 0));
     await page.screenshot({ path: 'verification/cases-mobile.png', fullPage: true });
     assert.deepEqual(errors, []);
-    console.log('PASS: 2 cases, ES/EN, 4 widths, images, URL, persistence, no horizontal overflow or JS errors.');
+    console.log('PASS: 4 project notes, ES/EN, 4 widths, images, URL, persistence, no horizontal overflow or JS errors.');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

@@ -15,7 +15,7 @@ for (const id of ['volia-control', 'psicocalc', 'scriptorium', 'psyche-lab']) {
 }
 assert.ok(html.includes('Ejemplo ficticio; no acredita validación clínica.'));
 assert.ok(html.includes('Captura sin registros privados.'));
-assert.ok(html.includes('href="https://psicocalc-pearl.vercel.app/"'));
+assert.ok(html.includes('href="cases/#psicocalc"'), 'Unvalidated clinical example must explain its scope before any tool access');
 const script = fs.readFileSync(path.join(root, 'script.js'), 'utf8');
 assert.ok(script.includes('captureLink.textContent = "Ver captura"'));
 for (const match of html.matchAll(/<img src="(assets\/portfolio\/[^\"]+)"/g)) {

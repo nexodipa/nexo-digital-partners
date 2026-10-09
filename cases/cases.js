@@ -13,7 +13,7 @@
     select.value = lang;
     textNodes.forEach(node => { node.textContent = lang === 'en' ? node.dataset.en : spanish.get(node); });
     images.forEach(node => { node.alt = lang === 'en' ? node.dataset.altEn : spanishAlt.get(node); });
-    document.title = lang === 'en' ? 'Project notes | Nexo Digital Partners' : 'Casos de proyecto | Nexo Digital Partners';
+    document.title = lang === 'en' ? (document.body.dataset.titleEn || 'Project notes | Nexo Digital Partners') : (document.body.dataset.titleEs || 'Casos de proyecto | Nexo Digital Partners');
     try { localStorage.setItem('nexo-case-language', lang); } catch {}
   }
   const requested = url.searchParams.get('lang');

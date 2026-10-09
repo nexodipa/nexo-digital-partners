@@ -1,3 +1,4 @@
 check-*.png
 verification/
 node_modules/
+locale/

@@ -8,6 +8,10 @@ const dialog = document.querySelector("#project-dialog");
 const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
 const supportedLanguages = Array.from(languageSelect.options, option => option.value);
+const siteBase = new URL('./', document.baseURI);
+const baseElement = document.querySelector('base') || document.head.appendChild(document.createElement('base'));
+baseElement.href = siteBase.href;
+const structuredSources = [...document.querySelectorAll('script[type="application/ld+json"]')].map(element => ({ element, data: JSON.parse(element.textContent) }));
 let preparedMessage = "";
 let previewTrigger = null;
 
@@ -51,8 +55,26 @@ function applyLanguage(requested, updateUrl = false) {
     ["placeholder", "aria-label", "title", "alt"].forEach(attr => translateAttribute(element, attr, lang));
   });
   document.title = "Nexo Digital Partners | " + translateText("Soluciones", lang);
+  const description = translateText('Webs para salud y educación. Herramientas para ordenar el trabajo de tu negocio.', lang);
+  document.querySelector('meta[name="description"]').content = description;
+  document.querySelector('meta[property="og:title"]').content = document.title;
+  document.querySelector('meta[property="og:description"]').content = description;
+  const localizedUrl = new URL(`locale/${lang}/`, siteBase);
+  document.querySelector('link[rel="canonical"]').href = localizedUrl.href;
+  document.querySelector('meta[property="og:url"]').content = localizedUrl.href;
+  structuredSources.forEach(({ element, data }) => {
+    const translated = JSON.parse(JSON.stringify(data));
+    translated.inLanguage = lang;
+    if (translated['@type'] === 'Organization') translated.description = description;
+    if (translated['@type'] === 'FAQPage') translated.mainEntity.forEach(item => {
+      item.name = translateText(item.name, lang);
+      item.acceptedAnswer.text = translateText(item.acceptedAnswer.text, lang);
+    });
+    element.textContent = JSON.stringify(translated);
+  });
   if (updateUrl) {
-    const url = new URL(location.href);
+    const url = location.protocol.startsWith('http') ? localizedUrl : new URL(location.href);
+    url.hash = location.hash;
     url.searchParams.set("lang", lang);
     history.replaceState(null, "", url);
   }
@@ -155,6 +177,8 @@ window.lucide?.createIcons();
 function resolveLanguage() {
   const requested = new URL(location.href).searchParams.get("lang");
   if (supportedLanguages.includes(requested)) return requested;
+  const pathLanguage = location.pathname.match(/\/locale\/([a-z]{2})\/$/)?.[1];
+  if (supportedLanguages.includes(pathLanguage)) return pathLanguage;
   try {
     const saved = localStorage.getItem("nexo-language");
     if (supportedLanguages.includes(saved)) return saved;
