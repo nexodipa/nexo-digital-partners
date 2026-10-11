@@ -14,7 +14,9 @@ const assert = require('node:assert/strict');
       for (const lang of ['es', 'en']) {
         await page.goto(`${base}?lang=${lang}#catalog`);
         assert.equal(await page.locator('html').getAttribute('lang'), lang);
-        assert.equal(await page.locator('.case-study').count(), 4);
+        assert.equal(await page.locator('.case-study').count(), 5);
+        assert.equal(await page.locator('#psyche-lab .case-details section').count(), 6);
+        assert.match(await page.locator('#psyche-lab .case-limit').innerText(), lang === 'en' ? /editorial review/ : /revisar expresiones/);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
         for (const image of await page.locator('.case-study img').all()) await image.scrollIntoViewIfNeeded();
         await page.waitForFunction(() => [...document.images].every(img => img.complete && img.naturalWidth > 0));
@@ -35,6 +37,6 @@ const assert = require('node:assert/strict');
     await page.waitForFunction(() => [...document.images].every(img => img.complete && img.naturalWidth > 0));
     await page.screenshot({ path: 'verification/cases-mobile.png', fullPage: true });
     assert.deepEqual(errors, []);
-    console.log('PASS: 4 project notes, ES/EN, 4 widths, images, URL, persistence, no horizontal overflow or JS errors.');
+    console.log('PASS: 5 project notes including Psyche Lab scope, ES/EN, 4 widths, images, URL, persistence, no horizontal overflow or JS errors.');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });
