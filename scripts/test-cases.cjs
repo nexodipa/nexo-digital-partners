@@ -15,6 +15,8 @@ const assert = require('node:assert/strict');
         await page.goto(`${base}?lang=${lang}#catalog`);
         assert.equal(await page.locator('html').getAttribute('lang'), lang);
         assert.equal(await page.locator('.case-study').count(), 5);
+        assert.equal(await page.locator('.evidence-index a').count(), 3);
+        assert.match(await page.locator('#evidence-title').innerText(), lang === 'en' ? /Choose a workflow/ : /Elige un recorrido/);
         assert.equal(await page.locator('#psyche-lab .case-details section').count(), 6);
         assert.match(await page.locator('#psyche-lab .case-limit').innerText(), lang === 'en' ? /editorial review/ : /revisar expresiones/);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);

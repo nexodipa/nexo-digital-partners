@@ -42,6 +42,10 @@ const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css
       for (const route of ['/cases/', '/delivery/']) {
         await page.goto(origin + route);
         await page.selectOption('#case-language','en');
+        if (route === '/delivery/') {
+          assert.equal(await page.locator('#acceptance .case-details section').count(), 4);
+          assert.match(await page.locator('#acceptance h2').innerText(), /How we check/);
+        }
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), true, `${route} at ${width}`);
       }
     }
