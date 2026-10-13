@@ -4,18 +4,18 @@
   const rows = [
   ["Ver captura", "View screenshot", "Screenshot ansehen", "Voir la capture", "Ver captura", "Vedi schermata", "Посмотреть снимок", "Zobrazit snímek", "查看截图", "スクリーンショットを見る", "הצגת צילום מסך", "عرض لقطة الشاشة"],
   [
-    "Cotizaciones, inventario, cobros y documentos en un espacio de trabajo local. Captura sin registros privados.",
-    "Quotes, inventory, collections and documents in a local workspace. Screenshot without private records.",
-    "Angebote, Lagerbestand, Zahlungseingänge und Dokumente in einer lokalen Arbeitsumgebung. Aufnahme ohne private Datensätze.",
-    "Devis, stocks, encaissements et documents dans un espace de travail local. Capture sans données privées.",
-    "Orçamentos, estoque, cobranças e documentos em um espaço de trabalho local. Captura sem registros privados.",
-    "Preventivi, inventario, incassi e documenti in uno spazio di lavoro locale. Schermata senza dati privati.",
-    "Сметы, запасы, платежи и документы в локальном рабочем пространстве. Снимок без конфиденциальных записей.",
-    "Nabídky, zásoby, platby a dokumenty v místním pracovním prostředí. Snímek bez soukromých záznamů.",
-    "在本地工作区管理报价、库存、收款和文档。截图不含私人记录。",
-    "見積もり、在庫、入金、文書をローカルの作業環境で管理。スクリーンショットに個人情報は含まれません。",
-    "הצעות מחיר, מלאי, גבייה ומסמכים בסביבת עבודה מקומית. צילום ללא רשומות פרטיות.",
-    "عروض أسعار ومخزون وتحصيل ومستندات في مساحة عمل محلية. لقطة شاشة بلا سجلات خاصة."
+    "Cotizaciones e inventario en un espacio de trabajo local. Captura sin registros privados.",
+    "Quotes and inventory in a local workspace. Screenshot without private records.",
+    "Angebote und Lagerbestand in einer lokalen Arbeitsumgebung. Aufnahme ohne private Datensätze.",
+    "Devis et stocks dans un espace de travail local. Capture sans données privées.",
+    "Orçamentos e estoque em um espaço de trabalho local. Captura sem registros privados.",
+    "Preventivi e inventario in uno spazio di lavoro locale. Schermata senza dati privati.",
+    "Сметы и запасы в локальном рабочем пространстве. Снимок без конфиденциальных записей.",
+    "Nabídky a zásoby v místním pracovním prostředí. Snímek bez soukromých záznamů.",
+    "在本地工作区管理报价和库存。截图不含私人记录。",
+    "見積もりと在庫をローカルの作業環境で管理。スクリーンショットに個人情報は含まれません。",
+    "הצעות מחיר ומלאי בסביבת עבודה מקומית. צילום ללא רשומות פרטיות.",
+    "عروض أسعار ومخزون في مساحة عمل محلية. لقطة شاشة بلا سجلات خاصة."
   ],
   [
     "Prototipo de captura de puntuaciones, perfiles visuales e informes. Ejemplo ficticio; no acredita validación clínica.",
