@@ -18,7 +18,7 @@ const assert = require('node:assert/strict');
         assert.equal(await page.locator('.evidence-index a').count(), 3);
         assert.match(await page.locator('#evidence-title').innerText(), lang === 'en' ? /Choose a workflow/ : /Elige un recorrido/);
         assert.equal(await page.locator('#psyche-lab .case-details section').count(), 6);
-        assert.match(await page.locator('#psyche-lab .case-limit').innerText(), lang === 'en' ? /editorial review/ : /revisar expresiones/);
+        assert.match(await page.locator('#psyche-lab .case-limit').innerText(), lang === 'en' ? /editorial review/ : /revisión editorial/);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
         for (const image of await page.locator('.case-study img').all()) await image.scrollIntoViewIfNeeded();
         await page.waitForFunction(() => [...document.images].every(img => img.complete && img.naturalWidth > 0));
