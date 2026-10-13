@@ -46,7 +46,7 @@ assert html.index('locale-completion.js?') < html.index('src="script.js'), 'Load
 copy = CopyParser()
 copy.feed(html)
 copy.keys.update({"Nombre / marca", "Mensaje copiado.", "No se pudo copiar. Abre WhatsApp o correo."})
-fixed = {"Idioma / Language", "MedStock", "Scriptorium", "Psyche Lab", "Inner Oraculum", "Volia", "Landing Express"}
+fixed = {"Idioma / Language", "MedStock", "Scriptorium", "Psyche Lab", "Inner Oraculum", "Volia", "Volia Catálogo", "Landing Express"}
 keys = sorted(k for k in copy.keys if k not in fixed and not k.startswith(("$", "josuepug@", "WhatsApp:")))
 script = """
 const fs = require('node:fs'), vm = require('node:vm');
