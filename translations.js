@@ -32,6 +32,11 @@ window.NEXO_FORM_CLOSING = {
 
 window.NEXO_TRANSLATIONS = {
   en: {
+    "Estudio independiente · Ecuador / Remoto": "Independent studio · Ecuador / Remote",
+    "Diseñamos webs y herramientas digitales para que servicios y operaciones complejas sean más claras, accesibles y fáciles de usar.": "We design websites and digital tools that make complex services and operations clearer, more accessible and easier to use.",
+    "Conversemos sobre tu proyecto": "Let's discuss your project",
+    "Explorar proyectos": "Explore projects",
+    "Proyecto propio · alcance transparente · contacto directo": "Independent work · transparent scope · direct contact",
     "Abrir menu": "Open menu",
     "Selector de idioma": "Language selector",
     "Idioma": "Language",
