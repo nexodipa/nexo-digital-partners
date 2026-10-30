@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nexodipa.github.io/nexo-digital-partners/sitemap.xml
