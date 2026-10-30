@@ -53,6 +53,7 @@ window.NEXO_TRANSLATIONS = {
     "Principios de trabajo": "Working principles",
     "Arquitectura antes de interfaz": "Architecture before interface",
     "Entrega lista para operar": "Delivery ready to operate",
+    "Medimos las visitas sin cookies ni datos personales.": "We measure visits without cookies or personal data.",
     "Trabajo a distancia": "Remote collaboration",
     "Español e inglés, por escrito y en videollamada": "Spanish and English, in writing and on video calls",
     "Propuesta con alcance, entregables y plazos antes de empezar": "A proposal with scope, deliverables and timeline before work starts",
