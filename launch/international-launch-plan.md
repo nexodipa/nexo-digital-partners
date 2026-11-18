@@ -80,7 +80,7 @@ Before importing a product CSV into a shop, I run it through a checker so duplic
 **C | Caso de uso**
 A short example of what a filled-in brief looks like for a fictional dental clinic website: goal, three audiences, what is in and out of scope, content owner, delivery date. If you are about to hire someone for a web project, filling this in first usually saves the first two calls. The tool and the example are free: [link]
 
-Si alguien responde pidiendo trabajo, la respuesta lleva a Landing Express en Fiverr (USD 150, siete días, dos revisiones) o a la página de contacto del sitio.
+Si alguien responde pidiendo trabajo, la respuesta lleva a Landing Express en Fiverr (siete días, dos revisiones; el precio se acuerda por escrito) o a la página de contacto del sitio.
 
 ## Criterio de decisión al día 14
 
