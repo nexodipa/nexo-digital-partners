@@ -15,7 +15,7 @@ Webs para salud y educación. Herramientas para ordenar tu negocio. Ecuador · R
 
 **Tres primeras publicaciones fijadas (en este orden):**
 
-1. Servicios. Carrusel de cuatro láminas: qué incluye Landing Express (hasta cinco secciones, un idioma, dos revisiones), qué no incluye, desde USD 150, cómo se empieza. Texto: "Una landing con alcance claro: qué entra, qué no, cuánto cuesta y en cuánto tiempo. Detalle en el enlace de la biografía."
+1. Servicios. Carrusel de cuatro láminas: qué incluye Landing Express (hasta cinco secciones, un idioma, dos revisiones), qué no incluye, que el precio se acuerda por escrito según el alcance, cómo se empieza. Texto: "Una landing con alcance claro: qué entra, qué no y en cuánto tiempo. Detalle en el enlace de la biografía."
 2. Trabajo real. Captura real de Volia Control o Psicocalc con el rótulo "Proyecto propio, prototipo". Texto: "Así se ve un panel operativo de cotizaciones e inventario. Es un prototipo propio, con datos ficticios."
 3. Proceso. Lámina de cuatro pasos: consulta, propuesta con alcance, primera entrega, revisiones. Texto: "Antes de escribir una línea de código, acordamos qué se entrega y qué no."
 
