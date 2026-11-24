@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilotos de asistentes de WhatsApp · Nexo Digital Partners</title>
+<meta name="description" content="Prueba un asistente de primera respuesta para tu rubro: psicología, consultorios, veterinarias, inmobiliarias, idiomas, belleza y gimnasios. Demos con datos ficticios.">
+<link rel="canonical" href="https://nexodipa.github.io/nexo-digital-partners/pilotos/">
+<meta property="og:title" content="Pilotos de asistentes de WhatsApp · Nexo Digital Partners">
+<meta property="og:description" content="Prueba un asistente de primera respuesta para tu rubro. Siete demos con datos ficticios.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nexodipa.github.io/nexo-digital-partners/pilotos/">
+<style>
+:root{--cream:#f6f1e7;--paper:#fffdf8;--navy:#14213d;--gray:#5b6475;--amber:#c8741a;--line:#e3dccb;--wa:#dcf8c6;--ok:#2f6b4f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--navy);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+a{color:var(--amber)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{padding:18px 0;border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-weight:700;letter-spacing:.02em}
+.brand span{color:var(--amber)}
+.cta-s{background:var(--navy);color:#fff;text-decoration:none;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600}
+.hero{padding:44px 0 20px}
+.kicker{color:var(--amber);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(28px,4.6vw,46px);line-height:1.12;margin:10px 0 14px;max-width:760px}
+.lead{font-size:18px;color:var(--gray);max-width:680px;margin:0}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:22px 0 14px;scrollbar-width:thin}
+.tab{flex:0 0 auto;border:1px solid var(--line);background:var(--paper);color:var(--navy);padding:10px 16px;border-radius:999px;font:600 14px inherit;cursor:pointer}
+.tab[aria-selected=true]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tab:focus-visible,.chip:focus-visible,button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.stage{display:grid;grid-template-columns:minmax(0,400px) minmax(0,1fr);gap:36px;align-items:start;padding:10px 0 40px}
+.phone{background:#0b141a;border-radius:28px;padding:10px;box-shadow:0 18px 50px rgba(20,33,61,.25);max-width:400px;width:100%}
+.screen{background:#efeae2;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;height:600px}
+.wa-head{background:#075e54;color:#fff;padding:12px 14px;display:flex;gap:10px;align-items:center}
+.av{width:36px;height:36px;border-radius:50%;background:#e8dcc4;color:#075e54;display:flex;align-items:center;justify-content:center;font-weight:800}
+.wa-head b{display:block;font-size:15px;line-height:1.1}
+.wa-head small{opacity:.85;font-size:12px}
+.log{flex:1;overflow-y:auto;padding:14px 12px;display:flex;flex-direction:column;gap:8px}
+.day{align-self:center;background:#e1f2fb;color:#4a5c68;font-size:12px;padding:3px 10px;border-radius:8px}
+.msg{max-width:84%;padding:8px 11px;border-radius:10px;font-size:14.5px;white-space:pre-wrap;box-shadow:0 1px 1px rgba(0,0,0,.08);color:#111}
+.msg.bot{background:#fff;align-self:flex-start;border-top-left-radius:2px}
+.msg.me{background:var(--wa);align-self:flex-end;border-top-right-radius:2px}
+.msg time{display:block;text-align:right;font-size:10.5px;color:#667781;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-self:flex-start;max-width:92%}
+.chip{border:1px solid #075e54;background:#fff;color:#075e54;border-radius:999px;padding:6px 12px;font:600 13px inherit;cursor:pointer}
+.chip:hover{background:#e7f3ef}
+.card{background:#fff;border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:10px;padding:10px 12px;font-size:13.5px;align-self:stretch}
+.card.urgent{border-left-color:#b3261e}
+.card h4{margin:0 0 6px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gray)}
+.card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px}
+.card dt{color:var(--gray)}
+.card dd{margin:0;font-weight:600}
+.card p{margin:8px 0 0;color:var(--ok);font-weight:600}
+.card.urgent p{color:#b3261e}
+.compose{display:flex;gap:6px;padding:8px;background:#f0f2f5}
+.compose input{flex:1;border:0;border-radius:999px;padding:10px 14px;font:14.5px inherit}
+.compose button{border:0;background:#075e54;color:#fff;border-radius:999px;padding:0 16px;font:700 14px inherit;cursor:pointer}
+.side h2{font-size:26px;margin:0 0 6px}
+.side .sub{color:var(--gray);margin:0 0 18px}
+.facts{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:12px}
+.facts li{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;margin-bottom:2px}
+.try{background:var(--navy);color:#fff;border-radius:14px;padding:16px 18px}
+.try b{color:#f4c98d}
+.try ul{margin:8px 0 0;padding-left:18px}
+.try li{margin:3px 0}
+.reset{background:none;border:1px solid #f4c98d;color:#f4c98d;border-radius:999px;padding:8px 14px;font:600 13px inherit;cursor:pointer;margin-top:14px}
+section.how{padding:34px 0;border-top:1px solid var(--line)}
+section.how h2{font-size:28px;margin:0 0 18px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;list-style:none;padding:0;margin:0;counter-reset:s}
+.steps li{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px;counter-increment:s}
+.steps li::before{content:counter(s);display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--amber);color:#fff;align-items:center;justify-content:center;font-weight:700;margin-bottom:8px}
+.steps b{display:block}
+.others{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.others a{display:block;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:var(--navy)}
+.others a b{display:block}
+.others a span{color:var(--gray);font-size:14px}
+.final{background:var(--navy);color:#fff;padding:44px 0;margin-top:20px}
+.final h2{margin:0 0 8px;font-size:30px}
+.final p{margin:0 0 20px;color:#d8dce6;max-width:620px}
+.wa-btn{display:inline-block;background:var(--amber);color:#fff;text-decoration:none;padding:14px 24px;border-radius:999px;font-weight:700}
+footer{padding:20px 0 40px;color:var(--gray);font-size:13px}
+@media(max-width:860px){.stage{grid-template-columns:1fr}.phone{margin:0 auto}.steps,.others{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps,.others{grid-template-columns:1fr}.screen{height:540px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand">Nexo <span>Digital Partners</span></div>
+  <a class="cta-s" href="#contacto">Quiero uno para mi negocio</a>
+</div></header>
+
+<main>
+<div class="wrap">
+  <div class="hero">
+    <div class="kicker">Pilotos de asistentes de WhatsApp</div>
+    <h1>Un asistente de primera respuesta no es igual para una veterinaria que para un gimnasio.</h1>
+    <p class="lead">Armé uno por rubro. Elige el tuyo, escribe como lo haría un cliente y mira qué le llega al equipo. Todo funciona con reglas y con datos ficticios; nada de lo que escribas aquí se guarda ni se envía.</p>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="Rubros" id="tabs"></div>
+
+  <div class="stage">
+    <div class="phone" aria-label="Simulación de chat de WhatsApp">
+      <div class="screen">
+        <div class="wa-head"><div class="av" id="av">N</div><div><b id="bizname">Negocio</b><small>cuenta de empresa · demo</small></div></div>
+        <div class="log" id="log" role="log" aria-live="polite"></div>
+        <form class="compose" id="form" autocomplete="off">
+          <input id="inp" type="text" placeholder="Escribe un mensaje" aria-label="Escribe un mensaje">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="side">
+      <h2 id="sTitle"></h2>
+      <p class="sub" id="sSub"></p>
+      <ul class="facts" id="facts"></ul>
+      <div class="try"><b>Pruébalo</b>
+        <ul id="tryList"></ul>
+        <button class="reset" id="reset" type="button">Reiniciar esta conversación</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="how"><div class="wrap">
+  <h2>Cómo sería con tu negocio</h2>
+  <ol class="steps">
+    <li><b>Me cuentas cómo atiendes hoy</b>Qué preguntan más, qué horarios manejas y qué debe resolver una persona.</li>
+    <li><b>Armo el asistente con tus datos</b>Tus servicios, tus horarios y tu tono, para que suene a tu negocio y no a una plantilla.</li>
+    <li><b>Lo probamos cuatro semanas</b>Medimos mensajes atendidos y solicitudes que llegan listas para confirmar. Tú decides si seguimos.</li>
+  </ol>
+</div></section>
+
+<section class="how"><div class="wrap">
+  <h2>Otras cosas que armé</h2>
+  <div class="others">
+    <a href="https://nexodipa.github.io/nexo-digital-partners/products/brief-kit/" target="_blank" rel="noopener"><b>Nexo Brief</b><span>Ordena objetivo, público y alcance de un proyecto web.</span></a>
+    <a href="https://nexodipa.github.io/nexo-digital-partners/products/catalog-check/" target="_blank" rel="noopener"><b>Nexo Catalog</b><span>Revisa un CSV de productos: precios, stock y SKU duplicados.</span></a>
+    <a href="https://nexodipa.github.io/nexo-digital-partners/demos/medstock/" target="_blank" rel="noopener"><b>MedStock</b><span>Demo de inventario con productos ficticios.</span></a>
+    <a href="https://nexodipa.github.io/nexo-digital-partners/" target="_blank" rel="noopener"><b>El estudio</b><span>Webs, apps, herramientas y automatización.</span></a>
+  </div>
+</div></section>
+
+<div class="final" id="contacto"><div class="wrap">
+  <h2>¿Quieres ver el tuyo funcionando?</h2>
+  <p>Cuéntame tu rubro por WhatsApp y te armo una demo con los datos de tu negocio.</p>
+  <a class="wa-btn" id="waLink" href="https://wa.me/593987707647?text=Hola%2C%20vi%20los%20pilotos%20de%20Nexo%20y%20quiero%20ver%20uno%20para%20mi%20negocio." target="_blank" rel="noopener">Escribir por WhatsApp · +593 98 770 7647</a>
+</div></div>
+</main>
+
+<footer><div class="wrap">Nexo Digital Partners · Estudio digital. Los nombres, horarios y solicitudes de estas demos son ficticios.</div></footer>
+
+<script>
+(function(){
+"use strict";
+var norm=function(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9ñ\s]/g," ").replace(/\s+/g," ").trim();};
+var has=function(t,keys){for(var i=0;i<keys.length;i++){if(t.indexOf(keys[i])>-1)return true;}return false;};
+
+/* Cada rubro: negocio ficticio, hora simulada, menú, intents por palabras clave y flujos con pasos. */
+var S=[
+{id:"psi",tab:"Psicología",biz:"Centro Raíz (demo)",av:"R",day:"Domingo 22:47",
+ title:"Centros de psicología",
+ sub:"Aquí lo que importa es el tono y qué se deriva a una persona sin demora.",
+ facts:[["Responde fuera de horario","El mensaje llega un domingo de noche y la persona recibe respuesta en segundos."],["Deja la cita lista","Modalidad, para quién y horario quedan ordenados; el centro solo confirma."],["Deriva lo delicado","Si el mensaje suena a crisis, no improvisa: avisa a una persona y marca la solicitud como urgente."]],
+ tryIt:["Escribe «quiero una cita»","Pregunta «cómo es la primera sesión»","Escribe «últimamente no quiero vivir» para ver cómo deriva"],
+ hello:"Hola, soy el asistente de Centro Raíz. Puedo ayudarte con citas, horarios y dudas sobre la primera sesión. Una persona del equipo revisa cada solicitud.",
+ menu:["Pedir una cita","Horarios","Primera sesión","Hablar con una persona"],
+ crisis:{k:["no quiero vivir","quitarme la vida","suicid","hacerme dano","me quiero morir","matarme"],reply:"Gracias por escribirlo. Lo que cuentas es importante y quiero que lo lea una persona ahora mismo. Si estás en peligro o pensando en hacerte daño, llama al 911. Ya avisé al equipo del centro para que te contacte con prioridad.",card:{t:"Alerta prioritaria",rows:[["Motivo","Mensaje con posible riesgo"],["Acción","Una persona del equipo debe contactar ya"]],p:"Marcada como urgente. No se agenda con el asistente.",urgent:true}},
+ intents:[
+  {k:["horario","atienden","abren","hora de atencion"],r:"Atendemos de lunes a viernes de 9:00 a 19:00 y los sábados de 9:00 a 13:00. Puedes dejar tu solicitud a cualquier hora y la confirman en horario de atención.",c:["Pedir una cita"]},
+  {k:["primera sesion","primera consulta","como es","como funciona","que pasa"],r:"La primera sesión es una conversación para conocerte y entender qué te trae. Dura alrededor de 50 minutos y la persona que te atienda define contigo los siguientes pasos. Puedes elegir presencial o virtual.",c:["Pedir una cita","Hablar con una persona"]},
+  {k:["donde","direccion","ubicacion","llegar"],r:"Estamos en el norte de Quito, cerca de Av. Amazonas (dirección ficticia de esta demo). Si prefieres, también atendemos en modalidad virtual.",c:["Pedir una cita"]},
+  {k:["cita","agendar","reservar","turno","sesion","consulta"],flow:"cita"},
+  {k:["persona","humano","alguien","secretaria"],flow:"humano"}
+ ],
+ flows:{
+  cita:{steps:[{key:"Modalidad",ask:"Con gusto. ¿Prefieres sesión presencial o virtual?",c:["Presencial","Virtual"]},{key:"Para",ask:"¿La cita es para ti, para tu hijo o hija, o para una pareja?",c:["Para mí","Para mi hijo/a","Pareja"]},{key:"Horario",ask:"¿Qué horario te queda mejor?",c:["Mañana","Tarde","Sábado"]}],done:"Listo, dejé tu solicitud ordenada. Una persona del centro te escribirá en horario de atención para confirmar el día y la hora.",title:"Solicitud de cita",rows:[["Contacto","+593 99 000 0000 (ficticio)"]]},
+  humano:{steps:[{key:"Tema",ask:"Claro. ¿Sobre qué quieres hablar con el equipo?",c:["Una cita","Una consulta","Otro tema"]}],done:"Perfecto. Le pasé tu mensaje a una persona del equipo y te escribirá en horario de atención.",title:"Pedido de contacto",rows:[["Contacto","+593 99 000 0000 (ficticio)"]]}
+ }},
+{id:"med",tab:"Consultorios",biz:"Consultorio Ámbar (demo)",av:"Á",day:"Martes 20:15",
+ title:"Consultorios médicos y odontológicos",
+ sub:"El teléfono suena mientras el profesional atiende. El asistente toma el pedido y deja la cita lista.",
+ facts:[["Atiende lo repetitivo","Horarios, ubicación, qué documentos llevar y cómo pedir cita."],["Ordena la solicitud","Especialidad, si es primera vez y horario preferido, listo para confirmar."],["No da consejo clínico","Todo lo que sea de salud se deriva al profesional."]],
+ tryIt:["Escribe «necesito una cita con odontología»","Pregunta «qué debo llevar»","Escribe «me duele el pecho» y mira cómo responde"],
+ hello:"Hola, soy el asistente del Consultorio Ámbar. Te ayudo a pedir cita y resuelvo dudas sobre horarios y qué llevar. Las citas las confirma una persona.",
+ menu:["Pedir cita","Horarios","Qué debo llevar","Hablar con una persona"],
+ crisis:{k:["me duele el pecho","no puedo respirar","desmayo","sangrado","emergencia","urgencia"],reply:"Eso no puede esperar a una cita. Si es una emergencia, llama al 911 o acude a urgencias ahora. Ya avisé al consultorio.",card:{t:"Alerta prioritaria",rows:[["Motivo","Mensaje con posible urgencia"],["Acción","Contactar a la persona de inmediato"]],p:"Marcada como urgente. El asistente no hace valoración clínica.",urgent:true}},
+ intents:[
+  {k:["horario","atienden","abren"],r:"Atendemos de lunes a viernes de 8:00 a 18:00. Odontología también los sábados por la mañana. Puedes dejar tu solicitud a cualquier hora.",c:["Pedir cita"]},
+  {k:["llevar","documentos","requisitos","traer"],r:"Para la primera cita trae tu cédula y, si los tienes, exámenes o informes anteriores. Si vienes por un seguro, trae también tu credencial.",c:["Pedir cita"]},
+  {k:["donde","direccion","ubicacion"],r:"Estamos en Quito, sector La Carolina (dirección ficticia de esta demo), con parqueadero para pacientes.",c:["Pedir cita"]},
+  {k:["cita","agendar","reservar","turno","odontolog","pediatr","medicina general","consulta"],flow:"cita"},
+  {k:["persona","humano","alguien","secretaria"],flow:"humano"}
+ ],
+ flows:{
+  cita:{steps:[{key:"Especialidad",ask:"Claro. ¿Con qué especialidad quieres la cita?",c:["Medicina general","Odontología","Pediatría"]},{key:"Primera vez",ask:"¿Es tu primera vez en el consultorio?",c:["Sí, primera vez","Ya soy paciente"]},{key:"Horario",ask:"¿Qué horario prefieres?",c:["Mañana","Tarde","Sábado"]}],done:"Listo. Dejé tu solicitud completa y una persona del consultorio te confirmará el día y la hora.",title:"Solicitud de cita",rows:[["Contacto","+593 98 000 0000 (ficticio)"]]},
+  humano:{steps:[{key:"Tema",ask:"Con gusto. ¿Qué necesitas consultar con el consultorio?",c:["Una cita","Resultados","Otro tema"]}],done:"Anotado. Una persona del consultorio te escribirá en horario de atención.",title:"Pedido de contacto",rows:[["Contacto","+593 98 000 0000 (ficticio)"]]}
+ }},
+{id:"vet",tab:"Veterinarias",biz:"Veterinaria Huellas (demo)",av:"H",day:"Sábado 19:30",
+ title:"Veterinarias",
+ sub:"Aquí la urgencia cambia todo: una mascota que respira mal no puede esperar a que alguien lea el chat.",
+ facts:[["Separa urgencia de rutina","Si el mensaje suena a emergencia, responde con la indicación de llamar ya y avisa al equipo."],["Agenda lo de siempre","Vacunas, control y consulta: especie, nombre y motivo quedan ordenados."],["Cubre el fin de semana","Los sábados por la tarde llegan más mensajes de los que alguien puede contestar."]],
+ tryIt:["Escribe «quiero vacunar a mi cachorro»","Pregunta por el horario","Escribe «mi perro se envenenó» para ver la rama de urgencia"],
+ hello:"Hola, soy el asistente de Veterinaria Huellas. Puedo agendar consultas y vacunas, o avisar al equipo si es una urgencia. ¿Qué necesitas?",
+ menu:["Agendar consulta","Vacunas","Urgencia","Horarios"],
+ crisis:{k:["urgencia","emergencia","envenen","atropell","convulsion","no respira","sangra","se esta muriendo"],reply:"Si tu mascota está grave, no esperes: llama ahora a la clínica al 02 000 0000 (número ficticio) y vente de inmediato. Ya avisé al equipo para que te esperen.",card:{t:"Urgencia veterinaria",rows:[["Prioridad","Alta"],["Acción","Llamar al cliente y preparar recepción"]],p:"Avisada al equipo de turno.",urgent:true}},
+ intents:[
+  {k:["horario","atienden","abren","hasta que hora"],r:"Atendemos de lunes a sábado de 8:00 a 19:00 y domingos de 9:00 a 13:00. Urgencias, todos los días por llamada.",c:["Agendar consulta","Urgencia"]},
+  {k:["donde","direccion","ubicacion"],r:"Estamos en Quito, sector Cumbayá (dirección ficticia de esta demo), con parqueadero.",c:["Agendar consulta"]},
+  {k:["vacuna","vacunar","desparasit","cachorro"],flow:"vacuna"},
+  {k:["consulta","cita","agendar","reservar","control","turno"],flow:"consulta"},
+  {k:["persona","humano","alguien","veterinario"],flow:"humano"}
+ ],
+ flows:{
+  vacuna:{steps:[{key:"Mascota",ask:"Con gusto. ¿Es perro, gato u otra mascota?",c:["Perro","Gato","Otra"]},{key:"Nombre",ask:"¿Cómo se llama?"},{key:"Edad",ask:"¿Qué edad tiene aproximadamente?",c:["Cachorro","Adulto","No sé"]},{key:"Horario",ask:"¿Qué horario te queda mejor para ir?",c:["Mañana","Tarde","Fin de semana"]}],done:"Listo. Dejé la solicitud de vacunación. El veterinario define el esquema para tu mascota y una persona te confirmará la hora.",title:"Solicitud de vacunación",rows:[["Contacto","+593 99 111 0000 (ficticio)"]]},
+  consulta:{steps:[{key:"Mascota",ask:"Claro. ¿Es perro, gato u otra mascota?",c:["Perro","Gato","Otra"]},{key:"Nombre",ask:"¿Cómo se llama?"},{key:"Motivo",ask:"¿Cuál es el motivo de la consulta?",c:["Control","Malestar","Piel o heridas","Otro"]},{key:"Horario",ask:"¿Qué horario prefieres?",c:["Mañana","Tarde","Fin de semana"]}],done:"Listo. La solicitud queda ordenada y una persona de la clínica te confirmará el horario.",title:"Solicitud de consulta",rows:[["Contacto","+593 99 111 0000 (ficticio)"]]},
+  humano:{steps:[{key:"Tema",ask:"Claro. ¿Sobre qué quieres hablar con el equipo?",c:["Una consulta","Un resultado","Otro tema"]}],done:"Anotado. Una persona de la clínica te escribirá pronto.",title:"Pedido de contacto",rows:[["Contacto","+593 99 111 0000 (ficticio)"]]}
+ }},
+{id:"inm",tab:"Inmobiliarias",biz:"Casa Nueva Inmobiliaria (demo)",av:"C",day:"Lunes 21:05",
+ title:"Inmobiliarias",
+ sub:"Cada consulta es un posible cliente. La diferencia está en calificar rápido y agendar la visita antes de que se enfríe.",
+ facts:[["Califica en un minuto","Compra o arriendo, sector, tipo de propiedad, presupuesto y plazo."],["Agenda visitas","Deja al asesor la lista de quién quiere ver qué y cuándo."],["Capta propietarios","Quien quiere publicar su propiedad queda separado de quien busca."]],
+ tryIt:["Escribe «busco un departamento para arrendar»","Pregunta «quiero vender mi casa»","Pide «hablar con un asesor»"],
+ hello:"Hola, soy el asistente de Casa Nueva Inmobiliaria. Te ayudo a buscar una propiedad, a publicar la tuya o a coordinar una visita.",
+ menu:["Quiero comprar","Quiero arrendar","Quiero vender o publicar","Hablar con un asesor"],
+ intents:[
+  {k:["horario","atienden","abren"],r:"El equipo atiende de lunes a sábado de 9:00 a 18:00. Las visitas se coordinan también en fin de semana.",c:["Quiero comprar","Quiero arrendar"]},
+  {k:["vender","publicar","mi casa","mi departamento","propietario"],flow:"vender"},
+  {k:["comprar","compra","adquirir"],flow:"comprar"},
+  {k:["arrendar","arriendo","alquilar","alquiler","rentar"],flow:"arrendar"},
+  {k:["visita","ver la propiedad","conocer"],flow:"comprar"},
+  {k:["persona","humano","asesor","agente"],flow:"humano"}
+ ],
+ flows:{
+  comprar:{steps:[{key:"Interés",ask:"Perfecto, busquemos algo para comprar. ¿Qué tipo de propiedad?",c:["Casa","Departamento","Terreno","Local"]},{key:"Sector",ask:"¿En qué zona?",c:["Norte de Quito","Cumbayá y valles","Sur de Quito"]},{key:"Presupuesto",ask:"¿Cuál es tu presupuesto aproximado? Puedes escribir un rango."},{key:"Plazo",ask:"¿Para cuándo quieres decidir?",c:["Este mes","En 3 meses","Solo estoy mirando"]}],done:"Listo. Con esto el asesor te prepara opciones y coordina una visita contigo.",title:"Consulta de compra",rows:[["Contacto","+593 98 222 0000 (ficticio)"]]},
+  arrendar:{steps:[{key:"Interés",ask:"Perfecto. ¿Qué tipo de propiedad buscas para arrendar?",c:["Departamento","Casa","Local","Suite"]},{key:"Sector",ask:"¿En qué zona?",c:["Norte de Quito","Cumbayá y valles","Sur de Quito"]},{key:"Presupuesto",ask:"¿Cuál es tu presupuesto mensual aproximado?"},{key:"Mudanza",ask:"¿Para cuándo necesitas mudarte?",c:["Este mes","En 2 meses","Sin apuro"]}],done:"Listo. El asesor te enviará opciones que encajen y coordinará visitas.",title:"Consulta de arriendo",rows:[["Contacto","+593 98 222 0000 (ficticio)"]]},
+  vender:{steps:[{key:"Operación",ask:"Con gusto. ¿Quieres vender o arrendar tu propiedad?",c:["Vender","Arrendar"]},{key:"Propiedad",ask:"¿Qué tipo de propiedad es?",c:["Casa","Departamento","Terreno","Local"]},{key:"Sector",ask:"¿En qué sector está?"}],done:"Anotado. Un asesor te llamará para coordinar la visita de valoración y la publicación.",title:"Propietario que publica",rows:[["Contacto","+593 98 222 0000 (ficticio)"]]},
+  humano:{steps:[{key:"Tema",ask:"Claro. ¿Qué quieres consultar?",c:["Una propiedad","Mi propiedad","Otro tema"]}],done:"Anotado. Un asesor te escribirá en horario de atención.",title:"Pedido de contacto",rows:[["Contacto","+593 98 222 0000 (ficticio)"]]}
+ }},
+{id:"idi",tab:"Idiomas",biz:"Aula Meridiano (demo)",av:"M",day:"Miércoles 23:20",
+ title:"Escuelas de idiomas",
+ sub:"Las preguntas son siempre las mismas: nivel, horarios, matrícula y prueba de ubicación. Perfectas para automatizar.",
+ facts:[["Orienta por nivel","Pregunta idioma, para quién es y modalidad antes de proponer nada."],["Agenda la prueba de ubicación","Deja a secretaría la lista de quién la rinde y cuándo."],["Habla inglés si hace falta","Un extranjero escribe en inglés y recibe respuesta en inglés."]],
+ tryIt:["Escribe «quiero aprender inglés»","Pregunta «cuándo empiezan los grupos»","Escribe en inglés: «I want to take a class»"],
+ hello:"Hola, soy el asistente de Aula Meridiano. Te ayudo a elegir idioma y nivel, y a agendar tu prueba de ubicación.",
+ menu:["Quiero un curso","Prueba de ubicación","Horarios de grupos","Hablar con secretaría"],
+ english:{k:["i want","i would like","hello","class","course","how much","english"],reply:"Hi, I'm the Aula Meridiano assistant. We teach English and other languages, in person or online. Tell me which language and your level, and I'll set up a placement test for you."},
+ intents:[
+  {k:["cuando empiezan","inicio","fechas","matricula","matricularme"],r:"Los grupos nuevos abren cada mes. Secretaría confirma las fechas exactas y el proceso de matrícula cuando recibe tu solicitud.",c:["Quiero un curso"]},
+  {k:["horario","atienden","abren","grupos"],r:"Tenemos grupos de mañana, tarde y noche, y sábados. Secretaría atiende de lunes a viernes de 9:00 a 20:00.",c:["Quiero un curso"]},
+  {k:["prueba","ubicacion","nivel"],flow:"curso"},
+  {k:["curso","aprender","clases","ingles","frances","aleman","italiano","portugues"],flow:"curso"},
+  {k:["persona","humano","secretaria","alguien"],flow:"humano"}
+ ],
+ flows:{
+  curso:{steps:[{key:"Idioma",ask:"Genial. ¿Qué idioma quieres aprender?",c:["Inglés","Francés","Alemán","Otro"]},{key:"Para",ask:"¿El curso es para ti, para tu hijo o hija, o para tu empresa?",c:["Para mí","Para mi hijo/a","Empresa"]},{key:"Modalidad",ask:"¿Presencial o virtual?",c:["Presencial","Virtual"]},{key:"Horario",ask:"¿Qué horario te queda mejor?",c:["Mañana","Tarde","Noche","Sábado"]}],done:"Listo. Dejé tu solicitud con prueba de ubicación incluida; secretaría te confirmará el día y la hora.",title:"Solicitud de curso",rows:[["Contacto","+593 99 333 0000 (ficticio)"]]},
+  humano:{steps:[{key:"Tema",ask:"Claro. ¿Qué necesitas consultar con secretaría?",c:["Matrícula","Mi curso actual","Otro tema"]}],done:"Anotado. Secretaría te escribirá en horario de atención.",title:"Pedido de contacto",rows:[["Contacto","+593 99 333 0000 (ficticio)"]]}
+ }},
+{id:"bel",tab:"Belleza",biz:"Estudio Lumbre (demo)",av:"L",day:"Domingo 22:10",
+ title:"Peluquerías y salones de belleza",
+ sub:"La agenda se llena de mensajes mientras el equipo tiene las manos ocupadas. El asistente reserva el espacio sin interrumpir a nadie.",
+ facts:[["Toma la reserva","Servicio, profesional y horario, con las reglas del salón (por ejemplo, valoración previa para color)."],["Responde de noche","Mucha gente escribe cuando sale del trabajo, con el salón ya cerrado."],["Complementa tu sistema","Si ya usas una plataforma de reservas, el asistente deja el pedido ordenado para cargarlo."]],
+ tryIt:["Escribe «quiero cambiar de color de cabello»","Pregunta «atienden los domingos»","Pide «corte y manicure»"],
+ hello:"Hola, soy el asistente de Estudio Lumbre. Te ayudo a reservar tu turno. ¿Qué servicio te interesa?",
+ menu:["Corte","Color","Manicure","Tratamiento capilar"],
+ intents:[
+  {k:["horario","atienden","abren","domingo","sabado"],r:"Atendemos de martes a sábado de 9:00 a 19:00. Domingo y lunes cerramos, pero puedes dejar tu reserva a cualquier hora.",c:["Corte","Color"]},
+  {k:["donde","direccion","ubicacion"],r:"Estamos en Quito, cerca de la Plaza Foch (dirección ficticia de esta demo).",c:["Corte","Color"]},
+  {k:["color","tinte","mechas","balayage","decolor"],flow:"color"},
+  {k:["corte","cortar","peinado","barba"],flow:"servicio"},
+  {k:["manicure","unas","pedicure","tratamiento","keratina","alisado"],flow:"servicio"},
+  {k:["reserv","turno","cita","agendar"],flow:"servicio"},
+  {k:["persona","humano","alguien","recepcion"],flow:"humano"}
+ ],
+ flows:{
+  color:{steps:[{key:"Servicio",ask:"Para color hacemos una valoración previa de 15 minutos, sin costo, para elegir el proceso adecuado. ¿Qué te gustaría?",c:["Cambio de color","Retoque de raíz","Mechas o balayage"]},{key:"Día",ask:"¿Qué día te queda bien?",c:["Esta semana","La próxima","Sábado"]},{key:"Horario",ask:"¿Prefieres mañana o tarde?",c:["Mañana","Tarde"]}],done:"Reserva solicitada con valoración incluida. Una persona del salón te confirmará el turno.",title:"Reserva de color",rows:[["Contacto","+593 98 444 0000 (ficticio)"]]},
+  servicio:{steps:[{key:"Servicio",ask:"Perfecto. ¿Qué servicio quieres reservar?",c:["Corte","Manicure","Tratamiento capilar","Corte y manicure"]},{key:"Día",ask:"¿Qué día te queda bien?",c:["Esta semana","La próxima","Sábado"]},{key:"Horario",ask:"¿Prefieres mañana o tarde?",c:["Mañana","Tarde"]}],done:"Reserva solicitada. Una persona del salón te confirmará el turno.",title:"Reserva de turno",rows:[["Contacto","+593 98 444 0000 (ficticio)"]]},
+  humano:{steps:[{key:"Tema",ask:"Claro. ¿Qué quieres consultar con recepción?",c:["Una reserva","Un servicio","Otro tema"]}],done:"Anotado. Recepción te escribirá en horario de atención.",title:"Pedido de contacto",rows:[["Contacto","+593 98 444 0000 (ficticio)"]]}
+ }},
+{id:"gym",tab:"Gimnasios",biz:"Ritmo Gym (demo)",av:"R",day:"Lunes 05:50",
+ title:"Gimnasios",
+ sub:"Todos preguntan por planes y clases a la vez, y el entrenador está en sala. La meta es una clase de prueba agendada.",
+ facts:[["Convierte la pregunta en visita","El objetivo no es explicar planes: es que la persona venga a probar."],["Conoce al prospecto","Objetivo y experiencia llegan al entrenador antes de la primera clase."],["Cubre la madrugada","Quien escribe a las 5:50 antes de entrenar recibe respuesta, no silencio."]],
+ tryIt:["Escribe «quiero una clase de prueba»","Pregunta «qué clases tienen»","Pide «hablar con un asesor» para ver cómo deriva los planes"],
+ hello:"Hola, soy el asistente de Ritmo Gym. Puedo agendarte una clase de prueba, contarte las clases y los horarios, o pasarte con un asesor para planes.",
+ menu:["Clase de prueba","Clases y horarios","Planes","Hablar con un asesor"],
+ intents:[
+  {k:["clases","horarios de clase","que clases","funcional","spinning","yoga"],r:"Tenemos funcional, spinning, yoga y entrenamiento de fuerza guiado, con clases desde las 5:30 hasta las 20:30. Puedes probar una antes de decidir.",c:["Clase de prueba"]},
+  {k:["horario","atienden","abren"],r:"Abrimos de lunes a viernes de 5:30 a 21:30 y sábados de 7:00 a 14:00.",c:["Clase de prueba"]},
+  {k:["plan","planes","membresia","mensualidad","precio","cuanto","costo"],flow:"humano_planes"},
+  {k:["prueba","probar","gratis","primera clase","inscrib"],flow:"prueba"},
+  {k:["donde","direccion","ubicacion"],r:"Estamos en Cumbayá (dirección ficticia de esta demo), con parqueadero.",c:["Clase de prueba"]},
+  {k:["persona","humano","asesor","alguien"],flow:"humano_planes"}
+ ],
+ flows:{
+  prueba:{steps:[{key:"Objetivo",ask:"Genial. ¿Cuál es tu objetivo principal?",c:["Bajar de peso","Ganar músculo","Salud y movilidad","Solo probar"]},{key:"Experiencia",ask:"¿Ya has entrenado antes?",c:["Primera vez","Entreno a veces","Entreno seguido"]},{key:"Horario",ask:"¿En qué horario te gustaría la clase de prueba?",c:["Madrugada","Mañana","Tarde","Noche"]}],done:"Listo. Dejé tu clase de prueba pedida y el entrenador la confirmará contigo.",title:"Clase de prueba",rows:[["Contacto","+593 99 555 0000 (ficticio)"]]},
+  humano_planes:{steps:[{key:"Interés",ask:"Los planes los explica un asesor según lo que necesites. ¿Qué te interesa?",c:["Plan mensual","Plan por clases","Plan familiar","No sé aún"]}],done:"Anotado. Un asesor te escribirá con las opciones que encajen contigo.",title:"Consulta de planes",rows:[["Contacto","+593 99 555 0000 (ficticio)"]]}
+ }}
+];
+
+var $=function(id){return document.getElementById(id);};
+var log=$("log"),inp=$("inp"),form=$("form"),tabsEl=$("tabs");
+var cur=null,state=null;
+
+function now(){var d=new Date();return ("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2);}
+function scroll(){log.scrollTop=log.scrollHeight;}
+function clearChips(){var c=log.querySelectorAll(".chips");for(var i=0;i<c.length;i++)c[i].remove();}
+function addMsg(text,who){var m=document.createElement("div");m.className="msg "+who;m.appendChild(document.createTextNode(text));var t=document.createElement("time");t.textContent=now();m.appendChild(t);log.appendChild(m);scroll();}
+function addChips(list){if(!list||!list.length)return;var w=document.createElement("div");w.className="chips";list.forEach(function(txt){var b=document.createElement("button");b.type="button";b.className="chip";b.textContent=txt;b.addEventListener("click",function(){send(txt);});w.appendChild(b);});log.appendChild(w);scroll();}
+function addCard(title,rows,p,urgent){var c=document.createElement("div");c.className="card"+(urgent?" urgent":"");var h=document.createElement("h4");h.textContent="Lo que ve el equipo · "+title;c.appendChild(h);var dl=document.createElement("dl");rows.forEach(function(r){var dt=document.createElement("dt");dt.textContent=r[0];var dd=document.createElement("dd");dd.textContent=r[1];dl.appendChild(dt);dl.appendChild(dd);});c.appendChild(dl);var pp=document.createElement("p");pp.textContent=p;c.appendChild(pp);log.appendChild(c);scroll();}
+function botSay(text,chips,delay){setTimeout(function(){addMsg(text,"bot");addChips(chips);},delay||350);}
+
+function runFlow(name){
+  var f=cur.flows[name];state={flow:name,i:0,data:[]};
+  var s=f.steps[0];botSay(s.ask,s.c);
+}
+function advance(text){
+  var f=cur.flows[state.flow],s=f.steps[state.i];
+  state.data.push([s.key,text]);state.i++;
+  if(state.i<f.steps.length){var n=f.steps[state.i];botSay(n.ask,n.c);return;}
+  var rows=state.data.concat(f.rows||[]);
+  setTimeout(function(){
+    addMsg(f.done,"bot");
+    addCard(f.title,rows,"Lista para que una persona la confirme.",false);
+    addChips(["Empezar de nuevo"]);
+  },450);
+  state=null;
+}
+
+function send(raw){
+  var text=(raw||"").trim();if(!text)return;
+  clearChips();addMsg(text,"me");inp.value="";
+  var t=norm(text);
+  if(t==="empezar de nuevo"||t==="menu"||t==="inicio"){state=null;botSay("De acuerdo, empecemos de nuevo. ¿Qué necesitas?",cur.menu);return;}
+  if(cur.crisis&&has(t,cur.crisis.k)){state=null;setTimeout(function(){addMsg(cur.crisis.reply,"bot");addCard(cur.crisis.card.t,cur.crisis.card.rows,cur.crisis.card.p,cur.crisis.card.urgent);addChips(["Empezar de nuevo"]);},450);return;}
+  if(state){advance(text);return;}
+  if(cur.english&&has(t,cur.english.k)&&!has(t,["quiero","hola","clase de","curso de"])){botSay(cur.english.reply,["Quiero un curso"]);return;}
+  for(var i=0;i<cur.intents.length;i++){
+    var it=cur.intents[i];
+    if(has(t,it.k.map(norm))){
+      if(it.flow){runFlow(it.flow);}else{botSay(it.r,it.c);}
+      return;
+    }
+  }
+  botSay("No estoy seguro de haber entendido. Puedo ayudarte con lo de abajo, o dejar tu mensaje para que lo lea una persona del equipo.",cur.menu.concat([]));
+}
+
+function load(id){
+  cur=S.filter(function(x){return x.id===id;})[0];state=null;
+  Array.prototype.forEach.call(tabsEl.children,function(b){b.setAttribute("aria-selected",b.dataset.id===id?"true":"false");});
+  $("bizname").textContent=cur.biz;$("av").textContent=cur.av;
+  $("sTitle").textContent=cur.title;$("sSub").textContent=cur.sub;
+  var f=$("facts");f.innerHTML="";cur.facts.forEach(function(x){var li=document.createElement("li");var b=document.createElement("b");b.textContent=x[0];li.appendChild(b);li.appendChild(document.createTextNode(x[1]));f.appendChild(li);});
+  var tl=$("tryList");tl.innerHTML="";cur.tryIt.forEach(function(x){var li=document.createElement("li");li.textContent=x;tl.appendChild(li);});
+  log.innerHTML="";
+  var d=document.createElement("div");d.className="day";d.textContent=cur.day+" · fuera de horario";log.appendChild(d);
+  setTimeout(function(){addMsg(cur.hello,"bot");addChips(cur.menu);},150);
+}
+
+S.forEach(function(s){var b=document.createElement("button");b.type="button";b.className="tab";b.setAttribute("role","tab");b.dataset.id=s.id;b.textContent=s.tab;b.addEventListener("click",function(){load(s.id);});tabsEl.appendChild(b);});
+form.addEventListener("submit",function(e){e.preventDefault();send(inp.value);});
+$("reset").addEventListener("click",function(){load(cur.id);});
+load("psi");
+window.__nexo={S:S,send:send,load:load};
+})();
+</script>
+</body>
+</html>
