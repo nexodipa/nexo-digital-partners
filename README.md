@@ -2,7 +2,7 @@
 
 Webs profesionales, herramientas operativas y automatizacion para profesionales y pequenos negocios. Definimos el problema, acordamos el alcance y construimos una primera entrega que se pueda probar.
 
-[Ver el sitio](https://nexodipa.github.io/nexo-digital-partners/) · [Solicitar una propuesta](https://nexodipa.github.io/nexo-digital-partners/#contacto) · [Recursos en Gumroad](https://pugmaster0.gumroad.com/)
+[Ver el sitio](https://nexodipa.github.io/nexo-digital-partners/) · [Solicitar una propuesta](https://nexodipa.github.io/nexo-digital-partners/#contacto) · [Recursos en Gumroad](https://nexodigitalpartners.gumroad.com/)
 
 ![Captura real del sitio de Nexo Digital Partners](social/marketplaces/nexo-web-workana.png)
 
@@ -14,7 +14,7 @@ Proyecto propio. La captura muestra la web; el monograma de su cabecera es una i
 
 | Herramienta | Para que sirve | Probar y revisar |
 | --- | --- | --- |
-| Nexo Brief | Ordenar objetivo, publico, alcance y entregables. Interfaz ES/EN, guardado manual, importacion JSON y exportaciones JSON/Markdown. | [Abrir](https://nexodipa.github.io/nexo-digital-partners/products/brief-kit/) / [Descarga gratuita con aportacion opcional](https://pugmaster0.gumroad.com/l/nexo-brief) / [Codigo y guia](products/brief-kit/) |
+| Nexo Brief | Ordenar objetivo, publico, alcance y entregables. Interfaz ES/EN, guardado manual, importacion JSON y exportaciones JSON/Markdown. | [Abrir](https://nexodipa.github.io/nexo-digital-partners/products/brief-kit/) / [Descarga gratuita con aportacion opcional](https://nexodigitalpartners.gumroad.com/l/nexo-brief) / [Codigo y guia](products/brief-kit/) |
 | Nexo Catalog | Revisar un CSV de productos: columnas asignables, precios, existencias, SKU duplicados e informes exportables. Interfaz ES/EN. | [Abrir](https://nexodipa.github.io/nexo-digital-partners/products/catalog-check/) / [Codigo y guia](products/catalog-check/) |
 
 Ambas herramientas trabajan con datos locales en el navegador. No envian el contenido de las fichas o CSV a Nexo. La version alojada genera las solicitudes web normales al proveedor de alojamiento. No introduzcas contrasenas, datos clinicos ni informacion sensible; las exportaciones no estan cifradas.
