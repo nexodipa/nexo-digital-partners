@@ -305,7 +305,7 @@ var S=[
 
 var $=function(id){return document.getElementById(id);};
 var log=$("log"),inp=$("inp"),form=$("form"),tabsEl=$("tabs");
-var cur=null,state=null;
+var cur=null,state=null,misses=0,firstMsg="";
 
 function now(){var d=new Date();return ("0"+d.getHours()).slice(-2)+":"+("0"+d.getMinutes()).slice(-2);}
 function scroll(){log.scrollTop=log.scrollHeight;}
@@ -324,6 +324,7 @@ function advance(text){
   state.data.push([s.key,text]);state.i++;
   if(state.i<f.steps.length){var n=f.steps[state.i];botSay(n.ask,n.c);return;}
   var rows=state.data.concat(f.rows||[]);
+  if(firstMsg)rows.push(["Primer mensaje",firstMsg.length>60?firstMsg.slice(0,57)+"...":firstMsg]);
   setTimeout(function(){
     addMsg(f.done,"bot");
     addCard(f.title,rows,"Lista para que una persona la confirme.",false);
@@ -335,6 +336,7 @@ function advance(text){
 function send(raw){
   var text=(raw||"").trim();if(!text)return;
   clearChips();addMsg(text,"me");inp.value="";
+  if(!firstMsg&&norm(text)!=="empezar de nuevo")firstMsg=text;
   var t=norm(text);
   if(t==="empezar de nuevo"||t==="menu"||t==="inicio"){state=null;botSay("De acuerdo, empecemos de nuevo. ¿Qué necesitas?",cur.menu);return;}
   if(cur.crisis&&has(t,cur.crisis.k)){state=null;setTimeout(function(){addMsg(cur.crisis.reply,"bot");addCard(cur.crisis.card.t,cur.crisis.card.rows,cur.crisis.card.p,cur.crisis.card.urgent);addChips(["Empezar de nuevo"]);},450);return;}
@@ -343,15 +345,24 @@ function send(raw){
   for(var i=0;i<cur.intents.length;i++){
     var it=cur.intents[i];
     if(has(t,it.k.map(norm))){
+      misses=0;
       if(it.flow){runFlow(it.flow);}else{botSay(it.r,it.c);}
       return;
     }
   }
-  botSay("No estoy seguro de haber entendido. Puedo ayudarte con lo de abajo, o dejar tu mensaje para que lo lea una persona del equipo.",cur.menu.concat([]));
+  misses++;
+  if(misses>=2){
+    var hn=cur.flows.humano?"humano":"humano_planes";
+    misses=0;
+    botSay("Prefiero que lo lea una persona del equipo antes que darte una respuesta equivocada. Te dejo con ellos, ya les llega todo lo que me has contado.",null,350);
+    setTimeout(function(){runFlow(hn);},900);
+    return;
+  }
+  botSay("No estoy seguro de haber entendido. Puedo ayudarte con lo de abajo, o pasar tu mensaje a una persona del equipo.",cur.menu);
 }
 
 function load(id){
-  cur=S.filter(function(x){return x.id===id;})[0];state=null;
+  cur=S.filter(function(x){return x.id===id;})[0];state=null;misses=0;firstMsg="";
   Array.prototype.forEach.call(tabsEl.children,function(b){b.setAttribute("aria-selected",b.dataset.id===id?"true":"false");});
   $("bizname").textContent=cur.biz;$("av").textContent=cur.av;
   $("sTitle").textContent=cur.title;$("sSub").textContent=cur.sub;
