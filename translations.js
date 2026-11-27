@@ -677,3 +677,16 @@ Object.assign(window.NEXO_TRANSLATIONS.ar, window.NEXO_TRANSLATIONS.en, {
   "Preparar solicitud": "إعداد الطلب",
   "Volver arriba": "العودة للأعلى"
 });
+
+/* Enlace a /pilotos/ en la home (27-nov) */
+Object.assign(window.NEXO_TRANSLATIONS.en, { "Probar el asistente de WhatsApp, siete rubros": "Try the WhatsApp assistant, seven industries" });
+Object.assign(window.NEXO_TRANSLATIONS.de, { "Probar el asistente de WhatsApp, siete rubros": "Den WhatsApp-Assistenten testen, sieben Branchen" });
+Object.assign(window.NEXO_TRANSLATIONS.fr, { "Probar el asistente de WhatsApp, siete rubros": "Essayer l'assistant WhatsApp, sept secteurs" });
+Object.assign(window.NEXO_TRANSLATIONS.pt, { "Probar el asistente de WhatsApp, siete rubros": "Testar o assistente de WhatsApp, sete segmentos" });
+Object.assign(window.NEXO_TRANSLATIONS.it, { "Probar el asistente de WhatsApp, siete rubros": "Prova l'assistente WhatsApp, sette settori" });
+Object.assign(window.NEXO_TRANSLATIONS.ru, { "Probar el asistente de WhatsApp, siete rubros": "Попробовать ассистента в WhatsApp, семь отраслей" });
+Object.assign(window.NEXO_TRANSLATIONS.cs, { "Probar el asistente de WhatsApp, siete rubros": "Vyzkoušet asistenta pro WhatsApp, sedm oborů" });
+Object.assign(window.NEXO_TRANSLATIONS.zh, { "Probar el asistente de WhatsApp, siete rubros": "试用 WhatsApp 助手，涵盖七个行业" });
+Object.assign(window.NEXO_TRANSLATIONS.ja, { "Probar el asistente de WhatsApp, siete rubros": "WhatsAppアシスタントを試す（7業種）" });
+Object.assign(window.NEXO_TRANSLATIONS.he, { "Probar el asistente de WhatsApp, siete rubros": "נסו את עוזר ה-WhatsApp, שבעה תחומים" });
+Object.assign(window.NEXO_TRANSLATIONS.ar, { "Probar el asistente de WhatsApp, siete rubros": "جرّب مساعد واتساب، سبعة مجالات" });
