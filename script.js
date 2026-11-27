@@ -158,7 +158,7 @@ function prepareRequest() {
     ...fields.map(([label, value]) => translateText(label) + ": " + String(value || "").trim()),
     "", window.NEXO_FORM_CLOSING[lang]
   ].join("\n");
-  document.querySelector("#whatsapp-result").href = "https://wa.me/593987411592?text=" + encodeURIComponent(preparedMessage);
+  document.querySelector("#whatsapp-result").href = "https://wa.me/593987707647?text=" + encodeURIComponent(preparedMessage);
   document.querySelector("#email-result").href = "mailto:josuepug@gmail.com?subject=" + encodeURIComponent("Nexo Digital Partners - " + translateText("Iniciar proyecto")) + "&body=" + encodeURIComponent(preparedMessage);
   setLocalizedText(formNote, "Solicitud preparada.");
   result.hidden = false;
