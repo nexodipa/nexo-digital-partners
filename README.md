@@ -8,6 +8,26 @@ Webs profesionales, herramientas operativas y automatizacion para profesionales 
 
 Proyecto propio. La captura muestra la web; el monograma de su cabecera es una ilustracion de marca, no una fotografia de nuestras instalaciones. [Procedencia de los activos](assets/brand/ASSETS.md).
 
+## En 60 segundos
+
+**Problema.** Un profesional o un negocio pequeno pierde consultas porque su web no explica la oferta, su catalogo vive en hojas sueltas o nadie responde a tiempo por WhatsApp.
+
+**Que hay aqui.** Un sitio comercial, dos herramientas que se prueban en el navegador y siete pilotos de asistente de WhatsApp.
+
+**Probar sin registrarte.**
+
+- [Sitio comercial](https://nexodipa.github.io/nexo-digital-partners/), en doce idiomas.
+- [Nexo Brief](https://nexodipa.github.io/nexo-digital-partners/products/brief-kit/): ordena objetivo, publico y alcance de un proyecto.
+- [Nexo Catalog](https://nexodipa.github.io/nexo-digital-partners/products/catalog-check/): revisa un CSV de productos.
+- [Pilotos de WhatsApp](https://nexodipa.github.io/nexo-digital-partners/pilotos/): siete rubros, con conversacion simulada y datos ficticios.
+
+**Decisiones tecnicas.**
+
+- Sitio estatico, sin backend de captacion ni compilacion: menos piezas que mantener y nada que se caiga.
+- Las dos herramientas procesan los datos en el navegador; el contenido no viaja a Nexo.
+- Cada publicacion pasa controles de traducciones, textos de oferta y paquete descargable; si uno falla, esa revision no se despliega.
+- Los textos de los doce idiomas se auditan: una cadena sin traducir detiene el despliegue.
+
 ## Herramientas que puedes probar
 
 [Casos de proyecto ES / EN: problema, solucion, demo y limites](launch/portfolio-cases.md).
